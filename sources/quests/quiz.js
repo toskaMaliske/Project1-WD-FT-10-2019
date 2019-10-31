@@ -5,11 +5,17 @@ let quiz = [{
 
     {
         prompt: "Select only primitives\n(a) array\n(b) undefined\n(c) object",
-        answer: "b" || "c"
+        answer: "b"
     },
 
     {
         prompt: "Choose the falsey value(s):\n(a) NaN\n(b) true\n(c) empty string`` ",
         answer: "c"
-    },
-]
+    },]
+
+
+
+// {
+//     prompt: "Select only primitives\n(a) array\n(b) undefined\n(c) object",
+//     answer: "b" || "c"
+// },

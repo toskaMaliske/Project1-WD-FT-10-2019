@@ -86,6 +86,7 @@ class Game {
                 if (this.playerCollision(obstacle, this.player)) {
                     this.obstacles.splice(index, 1);
                     this.player.lives -= 1;
+
                 }
 
                 if (this.player.lives === 0) {
@@ -176,6 +177,7 @@ class Game {
 
     //     button = createButton('submit');
     //     button.position(input.x + input.width, 65);
+    //     button.mousePressed(check);
 
     //     greeting = createElement('h2', 'Solve a Javascript question to earn 2 score points');
     //     greeting.position(20, 5);
@@ -186,13 +188,13 @@ class Game {
     //     question.position(20, greeting.y + greeting.height);
     //     textSize(45);
 
-    //     answer = random(quiz).answer;
+    //     answer = random((quiz).answer);
 
-    //     alertRight = createElement("h3", "");
+    //     alertRight = createElement("h3", "Congrats you've scored 2 points!");
     //     alertRight.position(20, question.y + question.height);
     //     alertRight.style("color", "white");
 
-    //     alertWrong = createElement("h3", "");
+    //     alertWrong = createElement("h3", "Sorry, that is wrong!");
     //     alertWrong.position(20, question.y + question.height);
     //     alertWrong.style("color", "white");
 
@@ -200,21 +202,23 @@ class Game {
     //     returnGame.position(20, question.y + question.height * 2);
     //     returnGame.style('color', 'white');
 
-    //     if (input === answer) {
-    //         button.mousePressed(alertRight = "Congrats you've scored 2 points!");
-    //         // clear.input();
-    //         // clear.alertRight();
-    //     } else {
-    //         button.mousePressed(alertWrong = "Sorry, that is wrong!");
-    //         // clear.input();
-    //         // clear.alertWrong();
+    //     function check() {
+    //         if (input === answer) {
+    //             text(alertRight);
+    //             // clear.alertRight();
+    //         } else {
+    //             text(alertWrong);
+    //             // clear.alertWrong();
+    //         }
+    //         input.value('');
     //     }
 
+    // }
 
-        //     //check button.onSubmit for the alerts?
 
-        //end of triggerQuiz====================================
-    //}
+    //check button.onSubmit for the alerts?
+
+    //end of triggerQuiz === === === === === === === === === === === ===
 
 
 
