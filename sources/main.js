@@ -20,9 +20,9 @@ function keyPressed() {
     if (keyCode === 38) {
         game.player.jump();
     }
-    if (keyCode === 13) {
-        mode = 1; //not working
-    }
+    // if (keyCode === 13) {
+    //     mode = 1; //not working
+    // }
 
     // if (mode == 2 && keyCode === 13) {
     //     console.log("enter");

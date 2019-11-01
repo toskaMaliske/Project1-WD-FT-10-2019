@@ -25,22 +25,29 @@ class Game {
 
             textSize(20);
             let welcomeText = "Welcome to ";
+            textSize(40);
+            let startTitle = "City Run ";
+            text(welcomeText + startTitle, 450, 120);
 
-            text(welcomeText, 450, 150);
-
-            textSize(30);
-            let startTitle = "Web Dev Bootcamp 101 ";
-            text(startTitle, 450, 200);
-
+            let instructionsArrow = "Use the ARROW-UP ";
+            let instructionsFlash = "to jump over the obstacles ";
+            let instructionsStar = "Collect the stars to score points ";
+            let instructionsHeart = " and the hearts for new lives.";
+            let startText = "Press SPACE to start the game!";
 
             fill("white");
-            let startText = "Press SPACE to start the game!";
             textSize(20);
-            text(startText, 450, 420);
 
-
+            text(instructionsArrow + instructionsFlash, 450, 220);
+            image(obstacleImg, 700, 200, 35, 35);
+            text(instructionsStar, 450, 290);
+            image(startStart, 620, 265, 30, 30);
+            text(instructionsHeart, 450, 360);
+            image(trophyImg, 620, 340, 30, 30);
+            text(startText, 450, 450);
 
         }
+
         if (mode == 1) {
 
             this.background.draw();
@@ -54,7 +61,7 @@ class Game {
             fill("white");
 
 
-            if (frameCount > 480 && frameCount % 240 === 0) {
+            if (frameCount > 320 && frameCount % 240 === 0) {
                 this.quests.push(new Quests());
             }
 
@@ -74,7 +81,7 @@ class Game {
             });
 
 
-            if (frameCount > 60 && frameCount % 240 === 0) {
+            if (frameCount > 30 && frameCount % 120 === 0) {
                 this.obstacles.push(new Obstacles());
             }
 
@@ -95,7 +102,7 @@ class Game {
             });
 
 
-            if (frameCount > 1200 && frameCount % 1200 === 0) {
+            if (frameCount > 800 && frameCount % 1200 === 0) {
                 this.trophies.push(new Trophies());
             }
 
@@ -145,7 +152,7 @@ class Game {
             // text(restart, width / 3, height / 2, width / 3, height / 2);
             // fill("white");
 
-            keyPressed(); //restart the game
+            // keyPressed(); //restart the game
         }
 
 
