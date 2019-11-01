@@ -14,7 +14,7 @@ class Player {
         this.y = height - 120;
         // console.log(this.x, this.y);
 
-        this.originalY = this.y
+        this.originalY = this.y;
 
     }
 

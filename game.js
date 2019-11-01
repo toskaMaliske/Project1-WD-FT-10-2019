@@ -69,10 +69,11 @@ class Game {
             this.quests.forEach((quest, index) => {
                 quest.draw();
 
-                if (quest.x + quest.width <= 0 && quest.y + quest.height >= 0) {
-                    this.quests.splice(index, 1);
-                }
-
+                // if (quest.x + quest.width <= 0 && quest.y < 700) {
+                //     // if (quest.x + quest.width >= width && quest.y + quest.height >= height) {
+                //     this.quests.splice(index, 1);
+                // }
+                // }
                 if (this.playerCollision(quest, this.player)) {
                     this.quests.splice(index, 1);
                     this.player.score += 1;
@@ -87,9 +88,9 @@ class Game {
 
             this.obstacles.forEach((obstacle, index) => {
                 obstacle.draw();
-                if (obstacle.x + obstacle.width <= 0 && obstacle.y + obstacle.height >= 0) {
-                    this.obstacles.splice(index, 1);
-                }
+                // if (obstacle.x + obstacle.width <= 0 && obstacle.y < this.player.y) {
+                //     this.obstacles.splice(index, 1);
+                //}
                 if (this.playerCollision(obstacle, this.player)) {
                     this.obstacles.splice(index, 1);
                     this.player.lives -= 1;
@@ -110,9 +111,11 @@ class Game {
             this.trophies.forEach((trophy, index) => {
                 trophy.draw();
 
-                if (trophy.x + trophy.width <= 0 && trophy.y + trophy.height >= 0) {
-                    this.trophies.splice(index, 1);
-                }
+                // if (trophy.x + trophy.width <= 0 && trophy.y < 800) {
+                //     // if (trophy.x + trophy.width >= width && trophy.y + trophy.height >= height) {
+                //     this.trophies.splice(index, 1);
+                // }
+                // }
 
                 if (this.playerCollision(trophy, this.player)) {
                     this.trophies.splice(index, 1);

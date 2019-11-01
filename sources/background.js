@@ -5,7 +5,7 @@ class Background {
 
     //DRAW BACKGORUND
     draw() {
-        this.x -= 2;
+        this.x -= 3;
         image(bgGame, this.x, 0, width, height);
         image(bgGame, this.x + width, 0, width, height);
 

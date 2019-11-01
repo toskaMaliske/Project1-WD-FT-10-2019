@@ -1,7 +1,7 @@
 class Obstacles {
     constructor() {
         this.x = width;
-        this.y = random(0, height);
+        this.y = random(0, 450);
 
         this.width = 50;
         this.height = 50;

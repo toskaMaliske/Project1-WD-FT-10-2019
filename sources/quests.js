@@ -2,7 +2,7 @@
 class Quests {
     constructor() {
         this.x = random(width, height);
-        this.y = random(0, height);
+        this.y = random(0, 450);
 
         this.width = 30;
         this.height = 30;
