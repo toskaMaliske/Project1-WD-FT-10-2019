@@ -5,6 +5,7 @@ City Run is a simple jump and run browser game. Which was supposed to have twist
 The question triggered by the lives-symbol was supposed to be entered in an input field created with DOM manipulation in p5.js. The problem of triggering only one question at a collision and closing the input field after a question is answered has not been solved yet. Thus this is a light version of the game.
 
 ##Instructions
+
 You're player is running through a city at night encountering obstacles that need to be avoided! 
 Press Space to start the game.
 Use the Arrow-Up ⬆️ to jump over the obstacles, blue flashes ⚡️.
